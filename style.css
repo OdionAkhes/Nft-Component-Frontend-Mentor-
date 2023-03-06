@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+font-family: "Outfit", sans-serif;
+}
+
+/* Colors */
+:root {
+--soft-blue:  hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--very-dark-blue: hsl(217, 54%, 11%);
+--dark-blue-card: hsl(216, 50%, 16%);
+--dark-blue-line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%)white;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: var(--very-dark-blue);
+}
+
+.container {
+    width: fit-content;
+    padding: 20px;
+    background-color: var(--dark-blue-card);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nft-image {
+height: 250px;
+width: auto;
+border-radius: 10px;
+/* position: relative; */
+}
+.header-images {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.header-images:hover .eye-icon {
+    display: block;
+    background-color:rgba(0, 255, 255, 0.54) ;
+}
+.eye-icon {
+position: absolute;
+left: 2px;
+top: 2px;
+border-radius: 10px;
+
+opacity: 0.5;
+    transition: all .3s ease-in-out;
+padding: 100px;
+
+z-index: 1;
+display: none;
+
+}
+
+.section-1 {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.section1 .heading-text {
+    color:white;
+    font-weight: 400;
+        transition: color .3s ease-in-out;
+            cursor: pointer;
+}
+
+.heading-text:hover {
+    color: var(--cyan)
+}
+/* .heading-text p {
+    color: var(--soft-blue)
+} */
+
+.section-1 .paragraph-1 {
+   color: var(--soft-blue);
+   font-weight: 300;
+}
+.section-1-paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+align-items: center
+}
+
+#paragraph {
+color: var(--cyan);
+font-weight: 500;
+display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#paragrap-2 {
+    color: var(--soft-blue);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+
+}
+hr {
+border: 1.5px solid var(--dark-blue-line)
+}
+
+.section-2 {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+    gap: 10px;
+}
+.section-2 img {
+    height: 32px;
+    width: auto;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+.paragraph-3 {
+    color: white;
+    transition: color .3s ease-in-out;
+        cursor: pointer;
+    /* transition:  */
+}
+.paragraph-3:hover {
+    color: var(--cyan)
+
+}
+.paragraph-3 span {
+    color: var(--Soft-blue);
+}
